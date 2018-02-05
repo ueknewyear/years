@@ -1,0 +1,169 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border:0;
+}
+html,body{
+	width: 100%;
+	height:100%;
+}
+#last{
+	width: 100%;
+	height:100%;
+	background: url(../img/last.png) no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+#last .lantern_top{
+	width: 100%;
+	height: 2.45rem;
+	background: url(../img/lantern.png) no-repeat center;
+	background-size: cover;
+	position: relative;
+}
+#last .lanternL{
+	width: 1.66rem;
+	height: 2.07rem;
+	position: absolute;
+	top:0.21rem;
+	left:1.59rem;
+	background: url(../img/lanternL.png) no-repeat center;
+	background-size: 100% auto;
+
+}
+#last .lanternR{
+	width: 1.86rem;
+	height: 2.1rem;
+	position: absolute;
+	top:0.21rem;
+	right:1.91rem;
+	background: url(../img/lanternR.png) no-repeat center;
+	background-size: 100% auto;
+}
+#last .logo{
+	width: 2.15rem;
+	height:1.98rem;
+	margin:10px auto 0;
+	background: url(../img/lastLOGO.png) no-repeat center;
+	background-size: cover;
+}
+#last .newYear{
+	width: 9.42rem;
+	height: 5.63rem;
+	background: yellow;
+	margin:1.11rem auto 0;
+	background: url(../img/newyear.png) no-repeat center;
+	background-size: cover;
+}
+#last h1{
+	font-family:Arial;
+	font-size: 0.34rem;
+	font-weight:bold;
+	color:#ffe479; 
+	text-align:center;
+	line-height: 0.44rem;
+	letter-spacing: 0.07rem;
+	text-shadow: 0.12rem 0.07rem 0.1rem rgba(101,11,19,0.6)
+}
+#last .last_bottom{
+	width: 100%;
+	height:8.94rem;
+	position: absolute;
+	left:0;
+	bottom:0;
+}
+#last .cloud{
+    width:100%;
+    height:4.7rem;
+    position: absolute;
+    left:0;
+    bottom:0;
+    background: url(../img/lastCLOUD.png) no-repeat center;
+	background-size: cover;
+}
+#last.swiper-slide-active .dog{
+	width: 11.51rem;
+	height: 8.21rem;
+	position: absolute;
+	left:0;
+	right:0;
+	margin:0 auto;
+	bottom:0;
+	background: url(../img/lastDog.png) no-repeat center;
+	background-size: cover;
+	z-index: 20;
+	animation: dogRun 2.5s linear forwards;
+}
+#last .springL{
+    width: 1.71rem;
+    height: 5.46rem;
+    position: absolute;
+    top:0;
+    left:0.69rem;
+    
+}
+#last .springR{
+    width: 1.71rem;
+    height: 5.46rem;
+    position: absolute;
+    top:0;
+    right:0.69rem;
+}
+
+#last.swiper-slide-active li{
+	width: 1.71rem;
+	height:1.71rem;
+	background: url(../img/lastSpring.png) no-repeat center;
+	background-size: cover;
+	margin-bottom: 0.11rem;
+	position: absolute;
+	top:0;
+	left:0;
+	animation: springli 2s 3s infinite;
+}
+#last.swiper-slide-active li:nth-child(2){
+	animation: tow 1.2s cubic-bezier(0.54, 0.24, 0.34, 1.19) forwards,springli 2s 3s infinite;
+    
+}
+#last.swiper-slide-active li:last-child{
+	animation: tow 1.2s cubic-bezier(0.54, 0.24, 0.34, 1.19) forwards,three 1.3s 1.2s cubic-bezier(0.54, 0.24, 0.34, 1.19) forwards,springli 2s 3s infinite;
+}
+
+@keyframes tow{
+	0%{
+       top:0;
+	} 
+	100%{
+      top:1.82rem;
+	}
+}
+@keyframes three{
+	0%{
+       top:1.82rem;
+	} 
+	100%{
+       top:3.64rem;
+	}
+}
+@keyframes dogRun{
+	0%{
+     transform: translateY(-20rem);
+	}
+	100%{
+     transform: translateY(0rem);
+	}
+}
+@keyframes springli{
+	0%{
+      transform: rotateY(0deg);
+	}
+	100%{
+      transform: rotateY(360deg); 
+	}
+}
