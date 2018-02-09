@@ -39,12 +39,26 @@ img{
 	background-size: 90%;
 	background-position: top center;
 }
-.top_couplet{
-	background-image: url('../img/duilain_top.png');
+.top_couplet1{
+	background-image: url('../img/clamp_11.png');
 	
 }
-.bottom_couplet{
-	background-image: url('../img/duilian_bot.png');
+.bottom_couplet1{
+	background-image: url('../img/clamp_12.png');
+}
+.top_couplet2{
+	background-image: url('../img/clamp_21.png');
+
+}
+.bottom_couplet2{
+	background-image: url('../img/clamp_22.png');
+}
+.top_couplet3{
+	background-image: url('../img/clamp_31.png');
+
+}
+.bottom_couplet3{
+	background-image: url('../img/clamp_32.png');
 }
 #two .top_couplet{
 	left: .16rem;
