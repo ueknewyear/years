@@ -53,7 +53,6 @@ html,body,.yfbox{
 .yfbox .leftDoor{
 	width: 50%;
 	height:100%;
-	background-color: yellow;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -66,7 +65,7 @@ html,body,.yfbox{
 }
 
 .swiper-slide-active.yfbox .leftDoor{
-	animation: openleft 1s linear 3s forwards;
+	animation: openleft 1s linear .5s forwards;
 }
 .yfbox .leftDoor .box{
 	width: 4.40rem;
@@ -75,15 +74,11 @@ html,body,.yfbox{
 	margin: 1.6rem 0.6rem 0 0;
 }
 .swiper-slide-active.yfbox .rightDoor{
-	animation: openright 1s linear 3s forwards;
-}
-.swiper-slide-active.yfbox .rightDoor{
-	animation: openright 1s linear 3s forwards;
+	animation: openright 1s linear .5s forwards;
 }
 .yfbox .rightDoor{
 	width: 50%;
 	height:100%;
-	background-color: pink;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -237,7 +232,7 @@ html,body,.yfbox{
 	transform: scale(0) translateY(10rem);
 }
 .swiper-slide-active.yfbox .fu{
-	animation: scale 1s cubic-bezier(0.71, 0.57, 0.11, 1.08) 3s forwards;
+	animation: scale 1s cubic-bezier(0.71, 0.57, 0.11, 1.08) 1s forwards;
 }
 .yfbox .fu img{
 	width: 100%;
