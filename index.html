@@ -15,6 +15,12 @@
     <title>优逸客拜年 </title>
 </head>
 <body>
+<div class="loaderbox">
+    <div class="loader">
+
+    </div>
+</div>
+
 <audio src="years.mp3" loop hidden autoplay></audio>
 <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -211,10 +217,15 @@
     </div>
 </div>
 <script>
-    var swiper = new Swiper('.swiper-container', {
-        direction: 'vertical',
-        loop:true
+    window.addEventListener('load',function(){
+        var loaderbox = document.getElementsByClassName('loaderbox')[0];
+        loaderbox.style.display = 'none';
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            loop:true
+        });
     });
+
 </script>
 </body>
 </html>
